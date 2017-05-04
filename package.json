@@ -1,21 +1,27 @@
 {
   "name": "frontend",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "proxy": "http://localhost:3001",
   "engines": {
     "node": ">=6",
     "npm": ">=3.8"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "bulma": "^0.4.1",
     "classnames": "^2.2.5",
     "fastclick": "^1.0.6",
     "history": "^4.6.1",
-    "react": "^15.4.2",
+    "material-ui": "1.0.0-alpha.12",
+    "material-ui-icons": "1.0.0-alpha.3",
+    "prop-types": "15.5.8",
+    "react": "15.5.4",
     "react-dom": "^15.4.2",
     "react-mdl": "^1.9.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
+    "structor": "^2.2.7",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
@@ -112,6 +118,7 @@
     "build:debug": "node tools/build.js --debug",
     "publish": "node tools/publish.js",
     "publish:debug": "node tools/publish.js --debug",
-    "start": "node tools/run.js"
+    "start": "node tools/run.js",
+    "structor": "structor"
   }
 }
