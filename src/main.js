@@ -5,7 +5,8 @@
  * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
  *
  * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
+ * LICENSE.txt file in the root director
+ * of this source tree.
  */
 
 import 'babel-polyfill';
@@ -16,9 +17,9 @@ import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
 import { Provider } from 'react-redux';
 
-import store from './store';
+import store from './store/store';
 import router from './router';
-import history from './history';
+import history from '../utils/history';
 
 let routes = require('./routes.json').default; // Loaded with utils/routes-loader.js
 

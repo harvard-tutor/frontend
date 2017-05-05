@@ -1,5 +1,7 @@
 {
   "name": "frontend",
+  "repository": "https://github.com/lyrn/frontend.git",
+  "license": "MIT",
   "version": "0.0.0",
   "private": false,
   "proxy": "http://localhost:3001",
@@ -8,9 +10,11 @@
     "npm": ">=3.8"
   },
   "dependencies": {
+    "alt": "^0.18.6",
     "babel-polyfill": "^6.23.0",
     "bulma": "^0.4.1",
     "classnames": "^2.2.5",
+    "enzyme": "^2.8.2",
     "fastclick": "^1.0.6",
     "history": "^4.6.1",
     "material-ui": "1.0.0-alpha.12",
@@ -19,8 +23,6 @@
     "react": "15.5.4",
     "react-dom": "^15.4.2",
     "react-mdl": "^1.9.0",
-    "react-redux": "^5.0.3",
-    "redux": "^3.6.0",
     "structor": "^2.2.7",
     "whatwg-fetch": "^2.0.3"
   },
@@ -109,16 +111,16 @@
     }
   },
   "scripts": {
-    "eslint": "eslint components src test tools postcss.config.js webpack.config.js",
+    "eslint": "eslint components src test utils postcss.config.js webpack.config.js",
     "stylelint": "stylelint \"components/**/*.css\" \"src/**/*.css\"",
     "lint": "npm run eslint && npm run stylelint",
     "test": "mocha --compilers js:babel-register",
     "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
-    "build": "node tools/build.js",
-    "build:debug": "node tools/build.js --debug",
-    "publish": "node tools/publish.js",
-    "publish:debug": "node tools/publish.js --debug",
-    "start": "node tools/run.js",
+    "build": "node utils/build.js",
+    "build:debug": "node utils/build.js --debug",
+    "publish": "node utils/publish.js",
+    "publish:debug": "node utils/publish.js --debug",
+    "start": "node utils/run.js",
     "structor": "structor"
   }
 }

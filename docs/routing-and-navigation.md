@@ -122,7 +122,7 @@ render(history.location);
 ```
 
 For more information about how the `history` npm module works please visit:
- 
+
 https://github.com/mjackson/history#usage
 
 All transitions between pages must be performed by using this module, for example:
